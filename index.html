@@ -1,1 +1,209 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WebGen AI — Create Your Brand</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="logo">WebGen<span>AI</span></div>
+
+    <nav>
+
+      <button class="nav-button active" data-page="website">Website</button>
+
+      <button class="nav-button" data-page="logo">Logo</button>
+
+      <button class="nav-button" data-page="brand">Brand Kit</button>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <p class="eyebrow">YOUR BRAND. YOUR VISION.</p>
+
+      <h1>Bring your ideas to life.</h1>
+
+      <p>Create websites, logos and complete brand identities with WebGen AI.</p>
+
+    </section>
+
+    <!-- WEBSITE GENERATOR -->
+
+    <section class="generator-page active" id="website">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">01 / WEBSITE CREATOR</p>
+
+        <h2>Website Generator</h2>
+
+        <p>Describe your business and let WebGen help bring your website to life.</p>
+
+      </div>
+
+      <div class="generator-card">
+
+        <label for="businessName">Business name</label>
+
+        <input id="businessName" placeholder="e.g. Urban Coffee">
+
+        <label for="businessType">Business category</label>
+
+        <input id="businessType" placeholder="e.g. Cafe, technology, fashion">
+
+        <label for="businessDescription">Describe your business</label>
+
+        <textarea id="businessDescription" placeholder="Tell us about your business, what it offers and what makes it special..."></textarea>
+
+        <label for="websiteStyle">Website style</label>
+
+        <select id="websiteStyle">
+
+          <option>Minimal</option>
+
+          <option>Professional</option>
+
+          <option>Creative</option>
+
+          <option>Modern</option>
+
+        </select>
+
+        <button class="generate-button" id="websiteGenerate">✦ Generate Website</button>
+
+        <div id="websiteResult" class="result"></div>
+
+      </div>
+
+    </section>
+
+    <!-- LOGO GENERATOR -->
+
+    <section class="generator-page" id="logo">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">02 / LOGO DESIGN</p>
+
+        <h2>Logo Generator</h2>
+
+        <p>Develop a visual identity that represents your brand.</p>
+
+      </div>
+
+      <div class="generator-card">
+
+        <label for="logoName">Brand name</label>
+
+        <input id="logoName" placeholder="Enter your brand name">
+
+        <label for="logoDescription">What does your brand do?</label>
+
+        <textarea id="logoDescription" placeholder="Describe your brand and its purpose..."></textarea>
+
+        <label for="logoStyle">Design style</label>
+
+        <select id="logoStyle">
+
+          <option>Minimal</option>
+
+          <option>Professional</option>
+
+          <option>Creative</option>
+
+          <option>Modern</option>
+
+        </select>
+
+        <label for="logoColor">Brand colour</label>
+
+        <input type="color" id="logoColor" value="#1677ff">
+
+        <button class="generate-button" id="logoGenerate">✦ Generate Logo</button>
+
+        <div id="logoResult" class="result"></div>
+
+      </div>
+
+    </section>
+
+    <!-- BRAND KIT GENERATOR -->
+
+    <section class="generator-page" id="brand">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">03 / BRAND IDENTITY</p>
+
+        <h2>Brand Kit Generator</h2>
+
+        <p>Build a consistent identity for your entire business.</p>
+
+      </div>
+
+      <div class="generator-card">
+
+        <label for="brandName">Brand name</label>
+
+        <input id="brandName" placeholder="Enter your brand name">
+
+        <label for="brandDescription">Business description</label>
+
+        <textarea id="brandDescription" placeholder="Describe your business and its personality..."></textarea>
+
+        <label for="brandStyle">Brand style</label>
+
+        <select id="brandStyle">
+
+          <option>Minimal</option>
+
+          <option>Professional</option>
+
+          <option>Creative</option>
+
+          <option>Modern</option>
+
+        </select>
+
+        <label for="brandColor">Primary brand colour</label>
+
+        <input type="color" id="brandColor" value="#1677ff">
+
+        <button class="generate-button" id="brandGenerate">✦ Generate Brand Kit</button>
+
+        <div id="brandResult" class="result"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>WebGen AI · Create something extraordinary.</p>
+
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
